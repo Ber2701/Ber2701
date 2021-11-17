@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band - F8</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="icon" href="https://img.icons8.com/material-outlined/24/000000/musical-notes.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <!-- responsive phải để dưới file css -->
+<!-- I. Phân tích
+   1. Header
+   2. Slider
+   3. Content
+          1. About
+          2. Tour
+          3. Contact
+          4. Image         
+    4. Footer
+II. Dựng base (xây móng)
+III. Xây dựng từng phần theo phân tích
+IV. Hoàn thiện -->
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+                <ul id="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#Band">Band</a></li>
+                    <li><a href="#Tour">Tour</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="#">
+                            More
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <ul class="subnav">
+                            <li><a href="#">Merchandise</a></li>
+                            <li><a href="#">Extras</a></li>
+                            <li><a href="#">Media</a></li>
+                        </ul>
+                    </li>
+                </ul> 
+            <div class="search-btn">
+                <i class="search-icon fas fa-search"></i>
+            </div> 
+            <div id="mobile-btn" class="menu-icon mobile-menu-btn">
+                <i class=" fas fa-bars"></i>
+            </div>          
+        </div>
+
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-heading">New York</h2>
+                <div class="text-chitiet">Lorem New York ipsuadipisicing elit.</div>
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- About-Content  THE BAND-->
+            <div id="Band" class="content-section">             
+                <h2 class="section-heading">THE BAND</h2>
+                <p class="section-sub-heading">
+                    We love music
+                </p>
+                <p class="about-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aliquid tempora, atque est reprehenderit distinctio minima laborum iusto suscipit provident fuga perferendis accusantium itaque nostrum, pariatur, praesentium architecto ut?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea quae voluptates officia itaque excepturi ex unde recusandae quisquam, natus iusto eveniet explicabo ut praesentium nostrum eligendi odit culpa rerum sit!
+                </p>
+                <div class="row member-list">
+                    <div class="col col-3 text-center">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/bandmember.jpg" alt="" class="member-img">
+                    </div>
+                    <div class="col col-3 text-center">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/bandmember.jpg" alt="" class="member-img">
+                    </div>
+                    <div class="col col-3 text-center">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/bandmember.jpg" alt="" class="member-img">
+                    </div>
+                    
+                </div>
+            </div>
+                <!-- Tour Dates TOUR -->
+            <div id="Tour" class="tour-section">
+                <div class="content-section">           
+                    <h2 class="section-heading text-white">TOUR DATES</h2>
+                    <p class="section-sub-heading text-white">
+                        Remember to book your tickets!
+                    </p>
+                    <ul class="tickets-list">
+                        <li>September <span class="sold-out">Sold-Out</span></li>
+                        <li>October <span class="sold-out">Sold-Out</span></li>
+                        <li>November <button class="quantity js-quantity">9</button></li>
+                    </ul>
+                    <!-- places -->
+                    <!-- col-3 được đặt class và css chia ra 3 cột -->
+                    <div class="row places-list">
+                        <div class="col-3 col"> 
+                            <img class="place-img" src="./assets/img/newyork.jpg" alt="">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2022</p>
+                                <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div  class="col-3 col">
+                            <img class="place-img" src="./assets/img/paris.jpg" alt="">
+                            <div class="place-body">
+                                <h3 class="place-heading">Paris</h3>
+                                <p class="place-time">Fri 27 Nov 2022</p>
+                                <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            </div>                           
+                        </div>
+                        <div  class="col-3 col">
+                            <img class="place-img" src="./assets/img/sanfran.jpg" alt="">
+                            <div class="place-body">
+                                <h3 class="place-heading">Viet Nam</h3>
+                                <p class="place-time">Fri 27 Nov 2022</p>
+                                <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+               <!-- Contact -->
+            <div id="contact" class="content-section"> 
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-sub-heading">
+                    Fan? Drop a note!
+                </p>
+
+                    <div class="row contact-content">
+                        <div class="col col-2 contact-info">
+                            <p><i class="contact-icon fas fa-map-marker"></i>
+                               VIET NAM</p>
+                            <p><i class="contact-icon fas fa-phone-volume"></i>
+                                Phone: +00 151515</p>
+                            <p><i class="contact-icon fas fa-envelope"></i>
+                                Email: mail@mail.com</p>
+                        </div>
+                        <div class="col col-2 contact-form">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col col-2">
+                                        <input type="text" placeholder="Name" name="" id="" required class="form-control">
+                                    </div>
+                                    <div class="col col-2">
+                                        <input type="email" placeholder="Email" name="" id="" required class="form-control">
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="row mt-8">
+                                    <div class="col col-full">
+                                        <input type="text" placeholder="Message" name="" id="" required class="form-control">
+                                    </div>
+                                </div>
+                                <input class='mt-16 form-submit-btn' type="submit" value="SEND">
+                            </form>
+                        </div>
+                    </div>               
+            </div>
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="Map">
+            </div>
+        </div>
+
+        <div id="footer" class="text-center">
+            <div class="icon-footer">
+                <a href="https://www.facebook.com/sung.tuan.144/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-snapchat-square"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-invision"></i></a>
+            </div>
+            <p class="copyright">Copyright TuanJays</p>
+        </div>
+    </div>
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                 <i class="fas fa-times"></i>
+            </div>
+
+            <header class="modal-header">
+                <h2 class="text-tickets"><i class="icon-ticket fas fa-ticket-alt"></i>
+                    Tickets</h2>
+                
+            </header>
+            <div class="modal-body">
+                <label for="quantity" class="modal-label">
+                    <i class=" fas fa-cart-arrow-down"></i>
+                    Tickets,20$ per person
+                </label>
+                <input id="quantity" type="text" class="modal-input" placeholder="How many?">
+                <label for="mail" class="modal-label">
+                    <i class="fas fa-user-alt"></i>
+                    Send to
+                </label>
+                <input id="mail" type="text" class="modal-input" placeholder="Enter email">
+
+                <button id="buy-tickets">Pay
+                    <i class="fas fa-check"></i>
+                </button>
+                
+            </div>
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="#">help?</a></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+<!-- bật tắt menu header -->
+<script>
+    const header = document.getElementById('header');
+    const mobileMenu = document.getElementById('mobile-btn');
+    const headerHeight = header.clientHeight;
+    //lắng nghe khi bấm vào thanh bar 
+     mobileMenu.onclick = function(){
+        const isClosed = header.clientHeight === headerHeight;
+        if(isClosed){
+            header.style.height = 'auto';
+        }else{ //tắt menu
+            header.style.height = null;
+        }
+    };
+    //tự động đóng menu sau khi chọn menu
+   const menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+    for(var i = 0; i <menuItems.length; i++){
+
+       
+        
+        
+
+        const menuItem = menuItems[i];
+       
+        menuItem.onclick = function(event){
+            var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+            if(isParentMenu){
+                event.preventDefault();
+                
+            }
+            else{
+                header.style.height = null;//tắt menu
+            }
+            
+           
+            
+        }
+    }
+    
+    
+</script>
+<!-- bật tắt menu buy tickets -->
+<script>
+    // lắng nghe sự kiện
+    const buyBtns = document.querySelectorAll('.js-buy-ticket')
+    const modal = document.querySelector('.js-modal')
+    const modalContainer = document.querySelector('.js-modal-container')
+    const modalClose = document.querySelector('.js-modal-close')
+    const buyTickets = document.querySelector('.js-quantity')
+    // hàm hiển thị menu mua hàng vào tạo class open  css
+    function showBuyTickets(){
+        modal.classList.add('open')
+    }
+    // ẩn đi menu mua hàng và xóa đi class open css
+    function hideBuyTickets(){
+        modal.classList.remove('open')
+    }
+    //lắng nghe khi click vao button buy ticket tại vì có 3 thằng nên làm vòng for
+    for(const buyBtn of buyBtns) {
+        buyBtn.addEventListener('click',showBuyTickets)
+    }
+    
+    //lắng nghe khi click vao x
+    modalClose.addEventListener('click',hideBuyTickets)
+    //lắng nghe khi click ra ngoài thì tắt
+    modal.addEventListener('click',hideBuyTickets)
+    //ko tắt khi click vào container dừng việc tắt
+    modalContainer.addEventListener('click',function(event){
+        event.stopPropagation()
+    })
+    // khi nhắn vào số lượng vé còn sẽ hiện lên bảng mua.
+    buyTickets.addEventListener('click',showBuyTickets)
+</script>
